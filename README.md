@@ -10,3 +10,6 @@ install pip:
 install package dependencies
   - pip install --target ./packages packagename
 
+create a lambda deployment package
+  - cd packages
+  - zip -r ../deployment-package.zip .

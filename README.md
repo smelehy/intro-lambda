@@ -12,4 +12,8 @@ install package dependencies
 
 create a lambda deployment package
   - cd packages
+  - sudo apt-get install zip 
   - zip -r ../deployment-package.zip .
+  - cd ..
+  - zip l-deploy.zip lambda-function.py
+

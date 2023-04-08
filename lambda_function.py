@@ -35,7 +35,6 @@ print('********************* dbsecrets *********************')
 pprint(dbsecrets)
 print('***************************************************')
 #dbparams  = json.loads(get_secret('hlw-db1-credentials','us-east-2'))
-#print('*****  dbparams *************')
 #pprint(dbparams)
 #print('*****************************')
 rds_host  = 'hlw-database-1.csmymcm2btd4.us-east-2.rds.amazonaws.com'

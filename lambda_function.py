@@ -34,9 +34,6 @@ dbsecrets = json.loads(get_secret('rds!db-065d633a-5436-4451-9248-d79bc059450a',
 print('********************* dbsecrets *********************')
 pprint(dbsecrets)
 print('***************************************************')
-#dbparams  = json.loads(get_secret('hlw-db1-credentials','us-east-2'))
-#pprint(dbparams)
-#print('*****************************')
 rds_host  = 'hlw-database-1.csmymcm2btd4.us-east-2.rds.amazonaws.com'
 #rds_host  = dbparams.get('host')
 name      = dbsecrets.get('username')

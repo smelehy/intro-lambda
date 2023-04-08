@@ -15,5 +15,5 @@ create a lambda deployment package
   - sudo apt-get install zip 
   - zip -r ../deployment-package.zip .
   - cd ..
-  - zip l-deploy.zip lambda_function.py  (python file name has to be 'lambda_function.py')
+  - zip deployment-package.zip lambda_function.py  (python file name has to be 'lambda_function.py')
 

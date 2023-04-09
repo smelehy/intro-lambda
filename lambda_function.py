@@ -40,7 +40,7 @@ name      = dbsecrets.get('username')
 password  = dbsecrets.get('password')
 #db_name   = dbparams.get('dbClusterIdentifier')
 db_name    = 'hlw_database_1'
-
+print('lambda-intro......')
 def lambda_handler(event, context):
     #result = {**dbsecrets, **dbparams}
     #This function fetches content from MySQL RDS instance

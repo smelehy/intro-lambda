@@ -40,8 +40,12 @@
   }
 
   .testclass {
-    background-color: red;
+    background-color: pink;
     border-color: blue;
+    border-width: thick;
     height: 300px;
     width: 500px;
+    padding-top: 5%;
+    text-align: center;
+    border: solid;
   }

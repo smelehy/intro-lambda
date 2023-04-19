@@ -1,0 +1,27 @@
+version: '3.3'
+
+services:
+  react:
+    build:
+      context: .
+      dockerfile: dockerfiles/react/Dockerfile
+    container_name: react
+#    environment:
+#    command: python manage.py runserver 0.0.0.0:8000
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./static:/npm/src
+      - ./dist:/npm/dist
+      - ./config:/npm/config
+      -  npm-volume:/npm/node_modules
+    ports:
+      - '8000:8000'
+      - '8080:8080'
+    networks:
+      - development
+networks:
+  development:
+    driver: bridge
+volumes:
+  npm-volume:

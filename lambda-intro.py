@@ -50,16 +50,20 @@ def lambda_handler(event, context):
     #result = {**dbsecrets, **dbparams}
     #This function fetches content from MySQL RDS instance
     print('before connect')
-    conn = pymysql.connect(host=rds_host, user=name, passwd=password, db=db_name, connect_timeout=5)
-    print('after connect')
-    cur  = conn.cursor()
-    print('after cursor')
+#    conn = pymysql.connect(host=rds_host, user=name, passwd=password, db=db_name, connect_timeout=5)
+#    print('after connect')
+#    cur  = conn.cursor()
+#    print('after cursor')
     item_count = 0
-    result = {}
-    cur.execute('select * from sysconfig')
-    for row in cur:
-        print(row,row[0],row[1],row[2])
-        result[row[0]] = row[1]
+    result = {
+        'hello' : 'lambda-world',
+        'also'  : 'cognito-too',
+        'dont-forget' : 'react-19'
+    }
+#    cur.execute('select * from contacts')
+#    for row in cur:
+#        print(row,row[0],row[1],row[2])
+#        result[row[0]] = row[1]
 
     return result
 
